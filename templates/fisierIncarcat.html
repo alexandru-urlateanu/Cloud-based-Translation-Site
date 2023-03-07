@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Date din Cosmos DB</title>
+  </head>
+  <body>
+    <table>
+        <tr>
+            <th>PRIMA_LIMBA</th>
+            <th>A_DOUA_LIMBA</th>
+            <th>TextOriginal</th>
+            <th>TextTradus</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+            <td>{{ item["PrimulLimbaj"] }}</td>
+            <td>{{ item["Al doilea limbaj"] }}</td>
+            <td>{{ item["textulOriginal"] }}</td>
+            <td>{{ item["TextTradus"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  </body>
+</html>
