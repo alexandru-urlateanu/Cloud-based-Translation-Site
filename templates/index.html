@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Translator de texte. Încărcați fișierul pe care doriți să îl traduceți.</h1>
+
+    <!-- de fiecare daca cand apasam butonul de submit, trimitem un post request catre server -->
+    <form action='/home' method='POST' enctype='multipart/form-data'>
+        {{ form.hidden_tag() }} <!-- creaza un camp ascuns care contine tokenul pentru csrf -->
+        {{ form.file() }}
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
