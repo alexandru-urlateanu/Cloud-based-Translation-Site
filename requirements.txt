@@ -1,0 +1,10 @@
+python-dotenv
+flask
+flask_wtf
+werkzeug
+wtforms
+requests
+azure-storage-blob
+azure-cosmos
+azure-identity
+azure-ai-translation-document
