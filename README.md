@@ -3,7 +3,7 @@
 #### Scopul realizării proiectului este folosirea a cât mai multor servicii Microsoft Azure și înțelegerea modurilor de funcționare a acestora
 
 __Componente__
-1) Website de încărcare a fișierelor
+1) Website de încărcare a fișierelor (_app.py_)
   - Este găzduit pe o mașină virtuală din Microsoft Azure
   - Rulează prin intermediul unei aplicații Flask
   - Preia fișierelor .txt din sistemul utilizatorului și le încarcă în aplicație
@@ -13,7 +13,7 @@ __Componente__
 4) Website pentru afișarea rezultatelor
   - Rulează prin intermediul unei aplicații Flask ce va prelua textele traduse din baza de date Cosmos DB și va afișa pe pagină atât textele originale, cât și pe cele translatate
   - Va rula pe portul 5001
-5) Website VM image
+5) Website VM image (_afisare-text-tradus.py_)
   - Am creat o imagine pe baza VM-ului pe care am testat aplicația
 6) Scale Set
   - Pe baza imaginii VM-ului am definit un scale set 
