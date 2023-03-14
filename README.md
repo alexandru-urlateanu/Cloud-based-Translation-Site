@@ -1,5 +1,6 @@
-# Cloud-Computing-Project
+# Cloud Computing Project
 ## Site de traducere texte din limba engleză în limba română, bazat pe servicii Microsoft Azure
+#### Scopul realizării proiectului este folosirea a cât mai multe servicii Microsoft Azure și înțelegerea funcționalității acestora
 
 __Componente__
 1) Website de încărcare a fișierelor
