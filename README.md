@@ -19,3 +19,25 @@ __Componente__
   - Pe baza imaginii VM-ului am definit un scale set 
 7) Load Balancer
   - Distribuie traficul venit către IP-ul public al scale set-ului la instanțele de mașini virtuale
+
+# (ENGLISH) Cloud Computing Project
+## Text translation site from English to Romanian, based on Microsoft Azure services
+#### The goal of the project was to use as many Microsoft Azure services as possible and to understand how they work
+
+__Components__
+1) File Upload Website (_app.py_)
+   - It is hosted on a virtual machine in Microsoft Azure
+   - Runs via a Flask app
+   - Retrieves .txt files from the user's system and uploads them to the application
+   - It will run on port 5000
+2) The _storage-upload.py_ script takes the text files from the application and uploads them to an **Azure Storage** container as BLOBs.
+3) The _translator.py_ script is used by **Azure Cognitive Services Translator** to translate the texts, then upload the translated files to an **Azure Cosmos DB** database
+4) Website for displaying the results
+   - Runs through a Flask application that will retrieve the translated texts from the Cosmos DB database and display both the original and the translated texts on the page
+   - It will run on port 5001
+5) Website VM image (_afisare-text-tradus.py_)
+   - I created an image based on the VM on which I tested the application
+6) Scale Set
+   - Based on the VM image we defined a scale set
+7) Load Balancer
+   - Distributes incoming traffic to the public IP of the scale set to the VM instances
