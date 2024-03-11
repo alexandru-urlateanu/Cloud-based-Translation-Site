@@ -13,7 +13,7 @@ __Componente__
 4) Website pentru afișarea rezultatelor
   - Rulează prin intermediul unei aplicații Flask ce va prelua textele traduse din baza de date Cosmos DB și va afișa pe pagină atât textele originale, cât și pe cele translatate
   - Va rula pe portul 5001
-5) Website VM image (_afisare-text-tradus.py_)
+5) Website VM image
   - Am creat o imagine pe baza VM-ului pe care am testat aplicația
 6) Scale Set
   - Pe baza imaginii VM-ului am definit un scale set 
@@ -35,7 +35,7 @@ __Components__
 4) Website for displaying the results
    - Runs through a Flask application that will retrieve the translated texts from the Cosmos DB database and display both the original and the translated texts on the page
    - It will run on port 5001
-5) Website VM image (_afisare-text-tradus.py_)
+5) Website VM image
    - I created an image based on the VM on which I tested the application
 6) Scale Set
    - Based on the VM image we defined a scale set
